@@ -1,0 +1,10 @@
+{
+    "source": "./src",
+    "excludes": ["\\.spec.js$"],
+    "destination": "./documentation",
+    "test": {
+        "type": "mocha",
+        "source": "./src",
+        "excludes": ["!\\.spec.js$"]
+    }
+}

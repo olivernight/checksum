@@ -1,0 +1,7 @@
+{
+    "name": "checksum",
+    "version": "0.0.1",
+    "description": "A simple google search bar on shortcut",
+    "author": "Olivier Gallas, Marvin Frachet <marvin.frachet@gmail.com>",
+    "homepage": "https://github.com/olivernight/checksum"
+}

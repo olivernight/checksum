@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+.m-t {
+    margin-top: 5px;
+}
+.item {
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+}
+.item:hover {
+    background-color: #f4f4f4;
+}
+.blue {
+    color: #0076D7;
+}
+.grey{
+  color :#666666;
+}
+.clipboard{
+  outline:none;
+  background-color: #0076D7;
+  padding : 5px;
+  font-size : 14px;
+  float : right;
+  border : 1px solid #0076D7;
+  border-radius : 3px;
+  color : white;
+}
+.clipboard:active{
+  opacity:0.7;
+}
+.title{
+  width : 240px;
+  word-wrap: break-word;
+}

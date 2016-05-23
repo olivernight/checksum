@@ -1,0 +1,70 @@
+{
+  "name": "checksum-app",
+  "version": "0.0.1",
+  "description": "Display the MD5 or your downloaded files",
+  "author": "Olivier Gallas, Marvin Frachet <marvin.frachet@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "pack": "build",
+    "dist": "build",
+    "start": "npm run standard && gulp && electron index",
+    "test": "npm run standard && gulp test:unit",
+    "docs": "./node_modules/.bin/esdoc -c esdoc.json",
+    "standard": "standard ./src/**/*.js --verbose"
+  },
+  "build": {
+    "app-bundle-id": "os.marvin.frachet",
+    "app-category-type": "public.search.file.checksum"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivernight/checksum.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "bugs": {
+    "url": "https://github.com/olivernight/checksum/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "coveralls": "^2.11.9",
+    "del": "^2.0.2",
+    "electron-builder": "^3.22.0",
+    "electron-prebuilt": "^1.1.1",
+    "esdoc": "0.4.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "isparta": "^3.0.3",
+    "jsdom": "^9.1.0",
+    "mocha-jsdom": "^1.1.0",
+    "sinon": "^1.17.4",
+    "spectron": "^3.0.0",
+    "standard": "^7.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^1.13.1"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  }
+}
